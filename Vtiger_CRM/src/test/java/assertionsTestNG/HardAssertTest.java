@@ -43,11 +43,19 @@ public class HardAssertTest {
 	@Test
 	public void localBranch()
 	{
-		//creating to check with local branch - git hub
+		//creating to check with local branch - git hub - 1st branch created LocalBranch_Vt
 		int a = 5;
 		//assertNull(a);
 		assertNotNull(a);
 		System.out.println(a);
 	}
 	
+	public void lB()
+	{
+		//creating to check with local branch - git hub - 2nd branch created LB_Practice
+		int a = 5;
+		//assertNull(a);
+		assertNotNull(a);
+		System.out.println(a);
+	}
 }
