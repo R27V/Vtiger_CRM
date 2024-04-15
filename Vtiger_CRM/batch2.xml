@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.GenericUtilities.ListenerImplimentationClass"></listener>
+	</listeners>
+  <test thread-count="2" parallel="tests" name="Test" preserve-order="false">
+    <classes>
+      <class name="batchExecutionTestNG.PracticeTest">
+		<methods>
+			<!-- <include name="createTest"></include> -->
+			<exclude name="editTest"></exclude>
+		</methods>  
+      </class>
+      <class name="batchExecutionTestNG.SampleTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="2" parallel="tests" name="Test1" preserve-order="false">
+    <classes>
+      <class name="batchExecutionTestNG.Demo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

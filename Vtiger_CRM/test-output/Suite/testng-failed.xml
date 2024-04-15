@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.GenericUtilities.ListenerImplimentationClass"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="batchExecutionTestNG.Demo">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="connectToDB"/>
+          <include name="logoutToApp"/>
+          <include name="loginToApp"/>
+          <include name="disConnectToDB"/>
+          <include name="demo3"/>
+        </methods>
+      </class> <!-- batchExecutionTestNG.Demo -->
+      <class name="batchExecutionTestNG.SampleTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="connectToDB"/>
+          <include name="launchBrowser"/>
+          <include name="logoutToApp"/>
+          <include name="loginToApp"/>
+          <include name="sampleTest1"/>
+          <include name="disConnectToDB"/>
+        </methods>
+      </class> <!-- batchExecutionTestNG.SampleTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
